@@ -1,2 +1,2 @@
 # sUAS_Photogrammetry_Suite_Test_Data
-Data tested against different sUAS Photogrammetry suites.
+Data to be tested against various sUAS Photogrammetry Suites.
