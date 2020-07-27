@@ -1,0 +1,1618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pix4dmapper>
+    <software>
+        <projectVersion>4.5.4</projectVersion>
+        <p4dVersion>22</p4dVersion>
+        <cameraModelVersion>19</cameraModelVersion>
+    </software>
+    <options>
+        <initial>
+            <runStep>true</runStep>
+            <!--    General    -->
+            <!--Keypoints Image Scale-->
+            <keypointsImageScale>Rapid</keypointsImageScale>
+            <imageScale>0.25</imageScale>
+            <!--Quality report-->
+            <generateOrthoInReport>true</generateOrthoInReport>
+            <!--    Matching    -->
+            <!--Matching Image Pairs-->
+            <matchStrategy>AutoAerial</matchStrategy>
+            <matchTimeNbNeighbours>2</matchTimeNbNeighbours>
+            <matchUseTriangulation>true</matchUseTriangulation>
+            <matchRelativeDistanceImages>0</matchRelativeDistanceImages>
+            <matchMtpMaxImagePair>5</matchMtpMaxImagePair>
+            <matchImageSimilarityMaxPairs>1</matchImageSimilarityMaxPairs>
+            <matchTimeMultiCamera>0</matchTimeMultiCamera>
+            <!--Matching Strategy-->
+            <geometricallyVerifiedMatching>true</geometricallyVerifiedMatching>
+            <!--    Calibration    -->
+            <!--Targeted number of keypoints-->
+            <keypointSelectionMethod>Automatic</keypointSelectionMethod>
+            <numberOfKeypoints>10000</numberOfKeypoints>
+            <!--Method-->
+            <calibrationMethod>Alternative</calibrationMethod>
+            <!--Optimizer-->
+            <optimizerType>Ceres</optimizerType>
+            <!--Camera optimization-->
+            <internalParamOptimization>AllPrior</internalParamOptimization>
+            <externalParamOptimization>All</externalParamOptimization>
+            <leverarmParamOptimization>None</leverarmParamOptimization>
+            <!--Rematch-->
+            <rematchStrategy>Custom</rematchStrategy>
+            <rematch>true</rematch>
+            <rematchOverlap>0.3000000119</rematchOverlap>
+            <!--SkySegmentation-->
+            <automaticSkyMasking>true</automaticSkyMasking>
+            <!--Export-->
+            <exportCameraParamsAATBBA>false</exportCameraParamsAATBBA>
+            <exportUndistortedImages>false</exportUndistortedImages>
+            <!--    Miscellaneous options    -->
+            <matchAll>false</matchAll>
+            <targetCameraDist>0</targetCameraDist>
+            <descriptorType>0</descriptorType>
+            <minImageDist>4.7324111086</minImageDist>
+            <rigMatch>true</rigMatch>
+            <saveKMLReport>false</saveKMLReport>
+            <createThumbnails>true</createThumbnails>
+            <threshAdd>20</threshAdd>
+            <threshHom>10</threshHom>
+        </initial>
+        <dense>
+            <runStep>false</runStep>
+            <!--Densification-->
+            <pclImageDownscaleFactor>0</pclImageDownscaleFactor>
+            <pclImageMultiscale>true</pclImageMultiscale>
+            <pclDensity>Optimal</pclDensity>
+            <pclMinNoMatches>3</pclMinNoMatches>
+            <!--Export-->
+            <pclExportLAS>false</pclExportLAS>
+            <pclExportLAZ>false</pclExportLAZ>
+            <pclExportPLY>false</pclExportPLY>
+            <pclExportXYZ>false</pclExportXYZ>
+            <pclExportXYZDelim>Space</pclExportXYZDelim>
+            <pclExportMergeTiles>false</pclExportMergeTiles>
+            <!--    Advanced    -->
+            <!--Densification-->
+            <pclWindowSize>9</pclWindowSize>
+            <!--Image groups-->
+            <pclImageGroups>
+                <group name=""/>
+            </pclImageGroups>
+            <!--Point cloud Filters-->
+            <pclUseProcessingArea>true</pclUseProcessingArea>
+            <pclUseAnnotations>true</pclUseAnnotations>
+            <pclLimitDepthAutomatically>true</pclLimitDepthAutomatically>
+            <!--Classification-->
+            <pclClassify>true</pclClassify>
+            <!--Miscellaneous options-->
+            <pclUniformityThreshold>3.5</pclUniformityThreshold>
+            <pclRegularizedMultiscale>false</pclRegularizedMultiscale>
+        </dense>
+        <mesh>
+            <!--Generation-->
+            <meshGenerate3dTexturedMesh>true</meshGenerate3dTexturedMesh>
+            <!--Settings-->
+            <meshResolution>High</meshResolution>
+            <meshMaxOctreeDepth>14</meshMaxOctreeDepth>
+            <meshTextureSize>16384</meshTextureSize>
+            <meshDecimationCriteria>Quantitative</meshDecimationCriteria>
+            <meshMaxTriangles>5000000</meshMaxTriangles>
+            <meshDecimationStrategy>Sensitive</meshDecimationStrategy>
+            <meshTextureColorBalancing>true</meshTextureColorBalancing>
+            <!--Export-->
+            <meshExportPLY>false</meshExportPLY>
+            <meshExportFBX>false</meshExportFBX>
+            <meshExportDXF>false</meshExportDXF>
+            <meshExportOBJ>false</meshExportOBJ>
+            <meshExportTiledOBJ>false</meshExportTiledOBJ>
+            <meshExportPDF3D>false</meshExportPDF3D>
+            <meshExportPDF3DLogoPath></meshExportPDF3DLogoPath>
+            <!--Image groups-->
+            <meshGeometryImageGroups>
+                <group name=""/>
+            </meshGeometryImageGroups>
+            <meshTextureImageGroups>
+                <group name=""/>
+            </meshTextureImageGroups>
+            <!--Mesh generation-->
+            <meshSampleDensityDivider>1</meshSampleDensityDivider>
+            <!--LOD generation-->
+            <lodExportOSGB>false</lodExportOSGB>
+            <lodExportSLPK>false</lodExportSLPK>
+            <lodLevelCount>4</lodLevelCount>
+            <lodTextureQuality>0</lodTextureQuality>
+        </mesh>
+        <ortho>
+            <runStep>false</runStep>
+            <!--    DSM and Orthomosaic   -->
+            <!--Resolution-->
+            <orthoResolution>-1</orthoResolution>
+            <!--DSM Filters-->
+            <dsmFilterUseNoiseFilter>true</dsmFilterUseNoiseFilter>
+            <dsmFilterUseSmoothing>true</dsmFilterUseSmoothing>
+            <dsmFilterSmoothingType>Sharp</dsmFilterSmoothingType>
+            <!--Raster DSM-->
+            <dsmTIFF>false</dsmTIFF>
+            <dsmMethod>InverseDistanceWeighting</dsmMethod>
+            <dsmTIFFMergeTiles>false</dsmTIFFMergeTiles>
+            <!--Orthomosaic-->
+            <mosaicTIFF>false</mosaicTIFF>
+            <mosaicTIFFMergeTiles>true</mosaicTIFFMergeTiles>
+            <mosaicTIFFNoTransparency>false</mosaicTIFFNoTransparency>
+            <mosaicKML>false</mosaicKML>
+            <!--    Additional outputs    -->
+            <!--Grid DSM-->
+            <gridDsmXYZ>false</gridDsmXYZ>
+            <gridDsmXYZDelim>Space</gridDsmXYZDelim>
+            <gridDsmLAS>false</gridDsmLAS>
+            <gridDsmLAZ>false</gridDsmLAZ>
+            <gridDsmGridSpacing>100</gridDsmGridSpacing>
+            <!--Raster DTM-->
+            <dtmTIFF>false</dtmTIFF>
+            <dtmTIFFMergeTiles>true</dtmTIFFMergeTiles>
+            <dtmResolution>-5</dtmResolution>
+            <!--Contour lines-->
+            <contourSHP>false</contourSHP>
+            <contourPDF>false</contourPDF>
+            <contourDXF>false</contourDXF>
+            <contourBase>0</contourBase>
+            <contourElevationInterval>10</contourElevationInterval>
+            <contourResolution>100</contourResolution>
+            <contourMinLineSize>20</contourMinLineSize>
+            <!--    Miscellaneous options    -->
+            <meanResolution>4.7625329243</meanResolution>
+            <mosaicVisib>true</mosaicVisib>
+            <mosaicGainc>true</mosaicGainc>
+            <dsmPNG>false</dsmPNG>
+        </ortho>
+        <index>
+            <radiometry>
+                <camera id="0">
+                    <radiometricCorrection>none</radiometricCorrection>
+                </camera>
+            </radiometry>
+            <!--Resolution-->
+            <indexResolution>-1</indexResolution>
+            <indexDownsamplingMethod>Gauss</indexDownsamplingMethod>
+            <!--Reflectance Map-->
+            <indexReflectance>false</indexReflectance>
+            <indexReflectanceMergeTiles>false</indexReflectanceMergeTiles>
+            <indices>
+                <index name="red" formula="red" enabled="false"/>
+                <index name="green" formula="green" enabled="false"/>
+                <index name="blue" formula="blue" enabled="false"/>
+                <index name="grayscale" formula="0.2126 * red + 0.7152 * green + 0.0722 * blue" enabled="false"/>
+            </indices>
+            <!--Export-->
+            <indexExportPointSHP>false</indexExportPointSHP>
+            <indexExportPointSHPGridSize>200</indexExportPointSHPGridSize>
+            <indexExportPolygonSHP>false</indexExportPolygonSHP>
+            <indexExportPolygonSHPGridSize>400</indexExportPolygonSHPGridSize>
+        </index>
+    </options>
+    <inputs>
+        <cameras>
+            <camera name="PeauPro82_3.97_4000x3000">
+                <imageWidth>4000</imageWidth>
+                <imageHeight>3000</imageHeight>
+                <pixelSize>1.55</pixelSize>
+                <principalPointXmm>3.142563</principalPointXmm>
+                <principalPointYmm>2.281367</principalPointYmm>
+                <lensType>perspective</lensType>
+                <focalLengthmm>4.1557515</focalLengthmm>
+                <distortion>5</distortion>
+                <radialK1>-0.10518</radialK1>
+                <radialK2>0.12025</radialK2>
+                <radialK3>0.0293972</radialK3>
+                <tangentialT1>-0.000366217</tangentialT1>
+                <tangentialT2>0.00106242</tangentialT2>
+                <cameraModelSource>edited</cameraModelSource>
+                <band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+                <band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+                <band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+                <serialNumber></serialNumber>
+                <fixedBands>false</fixedBands>
+                <id>0</id>
+            </camera>
+        </cameras>
+        <coordinateSystems>
+            <southingWesting>true</southingWesting>
+            <output>
+                <WKT>PROJCS[&quot;WGS 84 / UTM zone 18N&quot;,GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.0174532925199433,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]],PROJECTION[&quot;Transverse_Mercator&quot;],PARAMETER[&quot;latitude_of_origin&quot;,0],PARAMETER[&quot;central_meridian&quot;,-75],PARAMETER[&quot;scale_factor&quot;,0.9996],PARAMETER[&quot;false_easting&quot;,500000],PARAMETER[&quot;false_northing&quot;,0],UNIT[&quot;metre&quot;,1,AUTHORITY[&quot;EPSG&quot;,&quot;9001&quot;]],AXIS[&quot;Easting&quot;,EAST],AXIS[&quot;Northing&quot;,NORTH],AUTHORITY[&quot;EPSG&quot;,&quot;32618&quot;]]</WKT>
+                <verticalDef model="geoid" geoidName="EGM 96 Geoid"/>
+            </output>
+            <gcp>
+                <WKT>PROJCS[&quot;WGS 84 / UTM zone 18N&quot;,GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.0174532925199433,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]],PROJECTION[&quot;Transverse_Mercator&quot;],PARAMETER[&quot;latitude_of_origin&quot;,0],PARAMETER[&quot;central_meridian&quot;,-75],PARAMETER[&quot;scale_factor&quot;,0.9996],PARAMETER[&quot;false_easting&quot;,500000],PARAMETER[&quot;false_northing&quot;,0],UNIT[&quot;metre&quot;,1,AUTHORITY[&quot;EPSG&quot;,&quot;9001&quot;]],AXIS[&quot;Easting&quot;,EAST],AXIS[&quot;Northing&quot;,NORTH],AUTHORITY[&quot;EPSG&quot;,&quot;32618&quot;]]</WKT>
+                <verticalDef model="geoid" geoidName="EGM 96 Geoid"/>
+            </gcp>
+            <image>
+                <WKT>GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.01745329251994328,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</WKT>
+                <verticalDef model="geoid" geoidName="EGM 96 Geoid"/>
+            </image>
+        </coordinateSystems>
+        <gcps/>
+        <radiometry/>
+        <images>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0124.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:53:37</time>
+                <gps alt="153.910003662109375" lat="43.23089819987585258" lng="-77.9663360999809214"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0125.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:12</time>
+                <gps alt="250.4199981689453125" lat="43.2308984000589831" lng="-77.96632740001642503"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0126.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:17</time>
+                <gps alt="258.25" lat="43.23081700000000183" lng="-77.96628789999067521"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0127.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:18</time>
+                <gps alt="258.279998779296875" lat="43.23075429999039443" lng="-77.966248100015207"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0128.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:19</time>
+                <gps alt="258.260009765625" lat="43.23068450013258968" lng="-77.96620320000000959"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0129.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:21</time>
+                <gps alt="258.25" lat="43.23052769996888145" lng="-77.96610540001944401"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0130.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:23</time>
+                <gps alt="258.30999755859375" lat="43.23035670004768605" lng="-77.96600290000958466"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0131.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:25</time>
+                <gps alt="258.489990234375" lat="43.23018120002988951" lng="-77.96590060007743261"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0132.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:27</time>
+                <gps alt="258.649993896484375" lat="43.23000450008181872" lng="-77.9657980000000066"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0133.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:29</time>
+                <gps alt="258.760009765625" lat="43.22982770007769915" lng="-77.96569540010193577"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0134.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:31</time>
+                <gps alt="258.829986572265625" lat="43.2296487999386585" lng="-77.96559079991645547"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0135.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:33</time>
+                <gps alt="258.920013427734375" lat="43.22947109988776759" lng="-77.96548500000000104"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0136.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:39</time>
+                <gps alt="259.19000244140625" lat="43.22949249999999921" lng="-77.96541269999778478"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0137.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:40</time>
+                <gps alt="259.019989013671875" lat="43.22956099992332213" lng="-77.96541140002408099"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0138.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:42</time>
+                <gps alt="258.6300048828125" lat="43.22972400000000448" lng="-77.96541150012156152"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0139.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:44</time>
+                <gps alt="257.8900146484375" lat="43.22994309997119444" lng="-77.96541700000000219"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0140.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:46</time>
+                <gps alt="257.510009765625" lat="43.23009350002094209" lng="-77.96541509999455855"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0141.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:48</time>
+                <gps alt="256.94000244140625" lat="43.2302817998994513" lng="-77.96541289998565105"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0142.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:49</time>
+                <gps alt="256.739990234375" lat="43.23037599999999969" lng="-77.96541220010209372"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0143.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:52</time>
+                <gps alt="256.510009765625" lat="43.23065199999999919" lng="-77.96540369986169594"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0144.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:53</time>
+                <gps alt="256.42999267578125" lat="43.23074670000269037" lng="-77.96540429984779053"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0145.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:55</time>
+                <gps alt="256.3599853515625" lat="43.23093280000000505" lng="-77.96540440012662998"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0146.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:57</time>
+                <gps alt="256.519989013671875" lat="43.23112119989238522" lng="-77.96540229999867222"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0147.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:54:58</time>
+                <gps alt="256.519989013671875" lat="43.23121749999999963" lng="-77.96540420002808958"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0148.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:00</time>
+                <gps alt="256.55999755859375" lat="43.23140190004130545" lng="-77.96541120005930736"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0149.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:02</time>
+                <gps alt="256.730010986328125" lat="43.23157470000179359" lng="-77.96541600000000471"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0150.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:03</time>
+                <gps alt="256.82000732421875" lat="43.2316962999889256" lng="-77.96541589997640642"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0151.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:05</time>
+                <gps alt="256.829986572265625" lat="43.23183810001672356" lng="-77.96541559993173109"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0152.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:07</time>
+                <gps alt="256.589996337890625" lat="43.23203680000000304" lng="-77.96541420006072087"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0153.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:09</time>
+                <gps alt="256.44000244140625" lat="43.23220300015076134" lng="-77.96542520009415966"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0154.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:11</time>
+                <gps alt="257.42999267578125" lat="43.23230789997158752" lng="-77.96553079989712387"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0155.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:14</time>
+                <gps alt="258.779998779296875" lat="43.23221840000000071" lng="-77.96556559988917456"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0156.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:15</time>
+                <gps alt="258.760009765625" lat="43.23215730002974055" lng="-77.96556640000000016"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0157.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:17</time>
+                <gps alt="258.899993896484375" lat="43.23197610003165892" lng="-77.9655730999977834"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0158.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:19</time>
+                <gps alt="259.290008544921875" lat="43.23178560000000203" lng="-77.96557689995189833"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0159.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:21</time>
+                <gps alt="259.529998779296875" lat="43.2315735999349755" lng="-77.96557719999999847"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0160.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:23</time>
+                <gps alt="259.589996337890625" lat="43.23140019991582506" lng="-77.96557570000270232"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0161.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:25</time>
+                <gps alt="259.660003662109375" lat="43.23120550003266516" lng="-77.96557369996259013"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0162.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:27</time>
+                <gps alt="259.660003662109375" lat="43.23101040000000239" lng="-77.96557379997945247"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0163.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:29</time>
+                <gps alt="259.6400146484375" lat="43.23079579998759669" lng="-77.96557349985644692"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0164.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:31</time>
+                <gps alt="259.55999755859375" lat="43.2306202000110531" lng="-77.9655733000350466"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0165.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:32</time>
+                <gps alt="259.529998779296875" lat="43.23052260000535796" lng="-77.96557400000000371"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0166.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:34</time>
+                <gps alt="259.3699951171875" lat="43.23030959994984102" lng="-77.96557500000000118"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0167.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:36</time>
+                <gps alt="259.3900146484375" lat="43.23013419997413109" lng="-77.96557559997833664"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0168.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:37</time>
+                <gps alt="259.3800048828125" lat="43.23003670007032184" lng="-77.96557530003872216"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0169.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:39</time>
+                <gps alt="259.269989013671875" lat="43.22984159991784736" lng="-77.96557349985644692"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0170.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:41</time>
+                <gps alt="259.19000244140625" lat="43.22964500000000498" lng="-77.96557359999999903"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0171.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:43</time>
+                <gps alt="259.209991455078125" lat="43.22943079993483195" lng="-77.96557430007179335"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0172.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:45</time>
+                <gps alt="258.95001220703125" lat="43.22929700000000253" lng="-77.96561010004256786"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0173.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:47</time>
+                <gps alt="258.57000732421875" lat="43.22919640006385578" lng="-77.96570369999777483"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0174.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:51</time>
+                <gps alt="258.600006103515625" lat="43.22926170000623358" lng="-77.96573710001180757"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0175.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:53</time>
+                <gps alt="258.20001220703125" lat="43.22938509997261036" lng="-77.96574769992923848"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0176.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:55</time>
+                <gps alt="257.6300048828125" lat="43.22953569995988943" lng="-77.96575359999999932"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0177.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:57</time>
+                <gps alt="257.04998779296875" lat="43.22969519990702025" lng="-77.9657533000727625"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0178.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:55:59</time>
+                <gps alt="256.69000244140625" lat="43.22986289999428067" lng="-77.96575280007930075"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0179.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:01</time>
+                <gps alt="256.3699951171875" lat="43.23003980001315938" lng="-77.965756799911901"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0180.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:03</time>
+                <gps alt="256.17999267578125" lat="43.23022019997753063" lng="-77.96575200000000905"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0181.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:04</time>
+                <gps alt="256.230010986328125" lat="43.23030970000363027" lng="-77.96575040000000456"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0182.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:05</time>
+                <gps alt="256.239990234375" lat="43.2303972999909405" lng="-77.96574940000527931"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0183.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:07</time>
+                <gps alt="256.3800048828125" lat="43.23056700000000063" lng="-77.96575610011520041"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0184.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:09</time>
+                <gps alt="256.75" lat="43.23073369998405724" lng="-77.96575869987634633"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0185.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:11</time>
+                <gps alt="256.839996337890625" lat="43.23090840002481627" lng="-77.96575649999999769"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0186.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:13</time>
+                <gps alt="256.80999755859375" lat="43.23109500000000338" lng="-77.96575209999497247"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0187.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:15</time>
+                <gps alt="256.8900146484375" lat="43.2312813000320233" lng="-77.96574860005894436"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0188.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:17</time>
+                <gps alt="256.920013427734375" lat="43.23146810001077966" lng="-77.96574270003792151"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0189.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:19</time>
+                <gps alt="256.970001220703125" lat="43.23165620001881848" lng="-77.96573770009416648"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0190.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:21</time>
+                <gps alt="257.149993896484375" lat="43.23184129998944769" lng="-77.96573630000796129"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0191.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:23</time>
+                <gps alt="257.260009765625" lat="43.23202340004169741" lng="-77.96573569988326824"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0192.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:25</time>
+                <gps alt="257.44000244140625" lat="43.2321997999741896" lng="-77.96574519987409246"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0193.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:27</time>
+                <gps alt="258.29998779296875" lat="43.232305199936782" lng="-77.96586359997999693"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0194.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:30</time>
+                <gps alt="259.339996337890625" lat="43.23224079999999958" lng="-77.96590009997143511"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0195.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:31</time>
+                <gps alt="259.399993896484375" lat="43.23217090002319907" lng="-77.96590289996741774"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0196.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:33</time>
+                <gps alt="259.42999267578125" lat="43.23199800000000437" lng="-77.9659098999982092"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0197.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:35</time>
+                <gps alt="259.660003662109375" lat="43.23181149999999917" lng="-77.96591470009833813"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0198.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:37</time>
+                <gps alt="259.760009765625" lat="43.2315418999901766" lng="-77.96591619999651357"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0199.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:39</time>
+                <gps alt="259.790008544921875" lat="43.23142489996921967" lng="-77.96591570011767658"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0200.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:40</time>
+                <gps alt="259.82000732421875" lat="43.23132700000000028" lng="-77.96591500000000963"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0201.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:42</time>
+                <gps alt="259.790008544921875" lat="43.23111240010312173" lng="-77.96591399999999794"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0202.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:44</time>
+                <gps alt="259.8599853515625" lat="43.23093680007790596" lng="-77.96591479998022578"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0203.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:46</time>
+                <gps alt="259.80999755859375" lat="43.23074119997244935" lng="-77.96591479998022578"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0204.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:47</time>
+                <gps alt="259.8699951171875" lat="43.23056529998026321" lng="-77.96591459997198115"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0205.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:49</time>
+                <gps alt="259.82000732421875" lat="43.23044830003505012" lng="-77.96591490001503644"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0206.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:51</time>
+                <gps alt="259.6300048828125" lat="43.23017360000000053" lng="-77.96591519995210717"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0207.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:52</time>
+                <gps alt="259.57000732421875" lat="43.23011480013214936" lng="-77.965915100106983"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0208.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:54</time>
+                <gps alt="259.54998779296875" lat="43.22993849996838378" lng="-77.96591500000000963"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0209.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:56</time>
+                <gps alt="259.6199951171875" lat="43.22976220000516889" lng="-77.96591399999999794"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0210.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:56:58</time>
+                <gps alt="259.739990234375" lat="43.22956620005832917" lng="-77.96591450006468449"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0211.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:00</time>
+                <gps alt="259.79998779296875" lat="43.22935019999292194" lng="-77.96591370010787614"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0212.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:02</time>
+                <gps alt="259.760009765625" lat="43.22921029990167341" lng="-77.96593410000564006"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0213.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:06</time>
+                <gps alt="259.94000244140625" lat="43.22919219998352958" lng="-77.96606200000000797"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0214.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:08</time>
+                <gps alt="259.8800048828125" lat="43.2292875000000052" lng="-77.96607360007845955"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0215.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:09</time>
+                <gps alt="259.70001220703125" lat="43.22935070001783942" lng="-77.96607589984350284"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0216.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:12</time>
+                <gps alt="258.529998779296875" lat="43.22958619997707075" lng="-77.96608040003150109"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0217.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:14</time>
+                <gps alt="257.8699951171875" lat="43.2297605999929786" lng="-77.96607779998520016"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0218.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:16</time>
+                <gps alt="257.30999755859375" lat="43.2299464001158924" lng="-77.96607969995312715"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0219.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:18</time>
+                <gps alt="256.989990234375" lat="43.23014029995162133" lng="-77.96608069996602808"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0220.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:20</time>
+                <gps alt="256.850006103515625" lat="43.23033800000000326" lng="-77.966077999999996"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0221.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:22</time>
+                <gps alt="256.95001220703125" lat="43.23052400000000262" lng="-77.96607350009062998"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0222.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:24</time>
+                <gps alt="257.420013427734375" lat="43.23069789999514967" lng="-77.96607050000000072"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0223.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:25</time>
+                <gps alt="257.649993896484375" lat="43.2307978000247175" lng="-77.96607069993723371"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0224.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:27</time>
+                <gps alt="258.05999755859375" lat="43.23093920000000168" lng="-77.96606860004659723"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0225.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:28</time>
+                <gps alt="258.29998779296875" lat="43.23101489995742952" lng="-77.96606739988719426"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0226.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:29</time>
+                <gps alt="258.3599853515625" lat="43.23109320010055256" lng="-77.96606640000000255"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0227.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:31</time>
+                <gps alt="258.1400146484375" lat="43.23126140012845298" lng="-77.96606310013717689"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0228.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:33</time>
+                <gps alt="257.80999755859375" lat="43.23144459991708288" lng="-77.96605980012894577"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0229.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:35</time>
+                <gps alt="257.6400146484375" lat="43.23162769999402144" lng="-77.96606229999595428"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0230.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:37</time>
+                <gps alt="257.57000732421875" lat="43.23180989994734347" lng="-77.96607089994080297"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0231.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:39</time>
+                <gps alt="257.589996337890625" lat="43.23198770009416592" lng="-77.96607990012485345"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0232.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:41</time>
+                <gps alt="257.519989013671875" lat="43.23217110002771335" lng="-77.96608419996351813"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0233.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:42</time>
+                <gps alt="257.6400146484375" lat="43.23225700000000415" lng="-77.96608109994416225"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0234.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:46</time>
+                <gps alt="258.850006103515625" lat="43.23226990000265602" lng="-77.96596750000000497"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0235.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:47</time>
+                <gps alt="258.92999267578125" lat="43.23222850000000506" lng="-77.96589110005528767"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0236.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:49</time>
+                <gps alt="258.720001220703125" lat="43.23211520000000263" lng="-77.96569989998181427"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0237.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:51</time>
+                <gps alt="258.579986572265625" lat="43.23199470001028999" lng="-77.96549109993614479"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0238.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:53</time>
+                <gps alt="258.760009765625" lat="43.23187629994527015" lng="-77.96532039999999597"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0239.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:54</time>
+                <gps alt="258.920013427734375" lat="43.23180109990834552" lng="-77.96529029999462068"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0240.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:56</time>
+                <gps alt="259.010009765625" lat="43.23168280001337394" lng="-77.96531899989223291"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0241.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:57</time>
+                <gps alt="259.19000244140625" lat="43.23163649996512703" lng="-77.96539230000088594"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0242.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:57:59</time>
+                <gps alt="259.57000732421875" lat="43.23154600000000158" lng="-77.96558480000000202"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0243.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:01</time>
+                <gps alt="259.989990234375" lat="43.23145770010131628" lng="-77.96581089997360436"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0244.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:03</time>
+                <gps alt="260.220001220703125" lat="43.23137129999366124" lng="-77.96604740000529432"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0245.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:05</time>
+                <gps alt="259.959991455078125" lat="43.23126640000000265" lng="-77.96618039996681659"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0246.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:07</time>
+                <gps alt="259.94000244140625" lat="43.23110460000704336" lng="-77.96622740005092567"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0247.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:09</time>
+                <gps alt="259.839996337890625" lat="43.23092450005346876" lng="-77.96624149996699771"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0248.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:10</time>
+                <gps alt="259.709991455078125" lat="43.23083059997266986" lng="-77.96624280007432617"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0249.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:12</time>
+                <gps alt="259.459991455078125" lat="43.23063979999648154" lng="-77.966242500000007"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0250.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:13</time>
+                <gps alt="259.510009765625" lat="43.23054280001379368" lng="-77.96624179991799508"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0251.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:14</time>
+                <gps alt="259.54998779296875" lat="43.23044509996722695" lng="-77.9662411998775724"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0252.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:16</time>
+                <gps alt="259.6300048828125" lat="43.23024969993141298" lng="-77.96624089986872264"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0253.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:18</time>
+                <gps alt="259.670013427734375" lat="43.23001579999070998" lng="-77.9662411998775724"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0254.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:20</time>
+                <gps alt="259.739990234375" lat="43.22985819998497448" lng="-77.96624099999999657"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0255.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:21</time>
+                <gps alt="259.839996337890625" lat="43.22975900011960704" lng="-77.96624040002210165"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0256.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:23</time>
+                <gps alt="259.95001220703125" lat="43.22952069999423941" lng="-77.96623960010735743"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0257.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:25</time>
+                <gps alt="259.92999267578125" lat="43.22934350004818782" lng="-77.96623979998773279"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0258.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:27</time>
+                <gps alt="259.779998779296875" lat="43.2292138000309123" lng="-77.966268700072618"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0259.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:29</time>
+                <gps alt="259.55999755859375" lat="43.22917630000397793" lng="-77.96637939998960576"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0260.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:32</time>
+                <gps alt="260.529998779296875" lat="43.22926229990584091" lng="-77.96640519997390584"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0261.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:33</time>
+                <gps alt="260.480010986328125" lat="43.22931960000000373" lng="-77.96640740001774361"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0262.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:35</time>
+                <gps alt="259.8599853515625" lat="43.22946179999288319" lng="-77.96640580001340481"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0263.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:36</time>
+                <gps alt="259.459991455078125" lat="43.2295403000254268" lng="-77.96640439997932504"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0264.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:38</time>
+                <gps alt="258.839996337890625" lat="43.22970330003028039" lng="-77.96640509989485679"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0265.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:40</time>
+                <gps alt="258.350006103515625" lat="43.22987360000000479" lng="-77.96640979993217968"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0266.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:42</time>
+                <gps alt="257.959991455078125" lat="43.23005140000363156" lng="-77.966414400000005"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0267.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:44</time>
+                <gps alt="258" lat="43.23022559991934344" lng="-77.96641200000000538"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0268.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:46</time>
+                <gps alt="258.1099853515625" lat="43.23040429999824141" lng="-77.96640819999474559"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0269.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:48</time>
+                <gps alt="258.489990234375" lat="43.23058130001312094" lng="-77.96640910002004432"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0270.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:53</time>
+                <gps alt="259.980010986328125" lat="43.23055589997933623" lng="-77.96651570000088327"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0271.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:54</time>
+                <gps alt="260.079986572265625" lat="43.23049030000456128" lng="-77.9665408000000042"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0272.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:56</time>
+                <gps alt="259.970001220703125" lat="43.23032230000818998" lng="-77.96656720000000007"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0273.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:57</time>
+                <gps alt="259.970001220703125" lat="43.23022759993224895" lng="-77.96657230000819538"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0274.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:58:59</time>
+                <gps alt="260.029998779296875" lat="43.23003380001372875" lng="-77.96657629985755023"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0275.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:01</time>
+                <gps alt="259.8800048828125" lat="43.22976129998697559" lng="-77.96657780013414651"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0276.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:03</time>
+                <gps alt="259.82000732421875" lat="43.22964260008996717" lng="-77.96657650008087614"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0277.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:04</time>
+                <gps alt="259.779998779296875" lat="43.22954259991216475" lng="-77.96657490000353619"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0278.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:06</time>
+                <gps alt="259.67999267578125" lat="43.22934540001395476" lng="-77.9665736999625949"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0279.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:08</time>
+                <gps alt="259.480010986328125" lat="43.2292185999825449" lng="-77.96658280007756048"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0280.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:11</time>
+                <gps alt="259.07000732421875" lat="43.2292370000000048" lng="-77.96669119999999964"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0281.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:13</time>
+                <gps alt="259.3699951171875" lat="43.22932660000000027" lng="-77.96672440000000393"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0282.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:14</time>
+                <gps alt="259.230010986328125" lat="43.22938820000349125" lng="-77.96673309999999901"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0283.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:15</time>
+                <gps alt="259.05999755859375" lat="43.22945850009529778" lng="-77.96673789999999826"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0284.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:17</time>
+                <gps alt="258.709991455078125" lat="43.22961329997915669" lng="-77.96674160000000597"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0285.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:19</time>
+                <gps alt="258.3599853515625" lat="43.22978330000180591" lng="-77.96673950000000275"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0286.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:21</time>
+                <gps alt="258.07000732421875" lat="43.22996170002470961" lng="-77.96674079999999663"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0287.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:22</time>
+                <gps alt="258" lat="43.23005029999549009" lng="-77.96674029999999789"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0288.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:24</time>
+                <gps alt="257.959991455078125" lat="43.23022440003416023" lng="-77.96674099999999896"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0289.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:27</time>
+                <gps alt="258.82000732421875" lat="43.23034849997623041" lng="-77.96673010000000659"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0290.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:29</time>
+                <gps alt="259.42999267578125" lat="43.2302817998994513" lng="-77.96674729999922704"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0291.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:30</time>
+                <gps alt="259.44000244140625" lat="43.2302185999494597" lng="-77.96676089999999704"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0292.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:32</time>
+                <gps alt="259.54998779296875" lat="43.23005590003758414" lng="-77.9667976000000067"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0293.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:34</time>
+                <gps alt="260" lat="43.22987140000357442" lng="-77.96683989999918651"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+            <image path="D:/Users/Brett Edmond Carlock/Desktop/Photos (In-Process)/UAV Data/Martin Farms/2017-07-22/Old_Orchard/GOPR0294.JPG" group="group1" enabled="true">
+                <camera name="PeauPro82_3.97_4000x3000" id="0"/>
+                <time>2017:07:22 21:59:36</time>
+                <gps alt="260.339996337890625" lat="43.22968060007122659" lng="-77.96687760000000367"/>
+                <xyz x="0" y="0" z="0"/>
+                <accuracyXY>5</accuracyXY>
+                <accuracyZ>10</accuracyZ>
+            </image>
+        </images>
+        <indexRegions/>
+        <indexClasses/>
+        <objects>
+            <object name="Clipping Box" type="CLIPPING_BOX" centerX="259147" centerY="4790691" centerZ="258" sizeX="5" sizeY="5" sizeZ="5" rotationZ="0" fresh="true"/>
+            <object name="Unclassified" type="POINT_GROUP" groupId="0" classificationId="0" locked="false"/>
+            <object name="Disabled" type="POINT_GROUP" groupId="1" classificationId="0" locked="false"/>
+            <object name="Ground" type="POINT_GROUP" groupId="100" classificationId="0" locked="false"/>
+            <object name="Road Surface" type="POINT_GROUP" groupId="106" classificationId="0" locked="false"/>
+            <object name="High Vegetation" type="POINT_GROUP" groupId="102" classificationId="0" locked="false"/>
+            <object name="Building" type="POINT_GROUP" groupId="103" classificationId="0" locked="false"/>
+            <object name="Human Made Object" type="POINT_GROUP" groupId="109" classificationId="0" locked="false"/>
+        </objects>
+    </inputs>
+</pix4dmapper>
