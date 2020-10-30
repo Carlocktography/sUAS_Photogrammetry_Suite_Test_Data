@@ -9,7 +9,7 @@ Image Format: ProTune JPEG
 Image Sensor: GoPro Hero4 Black, Full Spectrum  
 Image Filter: KolariVision Blue/NIR NDVI Filter  
 sUAS: 3DR Solo  
-Collection: Survey
+Collection: Survey  
 Camera Angle: Nadir
 #
 # OldOrchard_2017-07-22
@@ -21,5 +21,5 @@ Image Format: ProTune JPEG
 Image Sensor: GoPro Hero4 Black, Full Spectrum  
 Image Filter: KolariVision Blue/NIR NDVI Filter  
 sUAS: 3DR Solo  
-Collection: Survey
+Collection: Survey  
 Camera Angle: Nadir
